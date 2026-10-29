@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cine Awards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="fundo-brilho"></div>
+
+  <!-- ====== TOPO ====== -->
+  <header class="topo" id="topo" hidden>
+    <a href="#" class="topo-logo" id="btnTopoHome">
+      
+      <span>CINE <small>AWARDS</small></span>
+    </a>
+    <nav class="topo-nav">
+      <button class="btn-link" id="btnTopoCategorias">Categorias</button>
+      <button class="btn-link" id="btnTopoResultados">Resultados</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ====== TELA INICIAL ====== -->
+    <section id="tela-home" class="tela ativa">
+      <div class="hero">
+        <h1 class="logo-titulo">CINE</h1>
+        <div class="logo-sub">
+          <span class="linha"></span>
+          <span class="logo-awards">AWARDS</span>
+          <span class="linha"></span>
+        </div>
+        <p class="hero-texto">A maior noite do cinema e das séries. Escolha seus favoritos e faça história.</p>
+      </div>
+
+      <div class="secao-titulo">
+        <h2>Escolha uma categoria</h2>
+        <p id="progressoTexto">Você ainda não votou</p>
+        <div class="barra-progresso"><div id="barraProgresso"></div></div>
+      </div>
+
+      <div class="grade-categorias" id="gradeCategorias"></div>
+
+      <div class="acoes-home">
+        <button class="btn btn-ouro" id="btnVerResultados">Ver resultados</button>
+      </div>
+    </section>
+
+    <!-- ====== TELA DE VOTAÇÃO ====== -->
+    <section id="tela-categoria" class="tela">
+      <button class="btn-voltar" id="btnVoltarHome">← Todas as categorias</button>
+      <div class="cat-cabecalho">
+        <div class="cat-icone" id="catIcone"></div>
+        <p class="cat-etapa" id="catEtapa"></p>
+        <h2 id="catNome"></h2>
+        <p class="cat-aviso" id="catAviso"></p>
+      </div>
+      <div class="grade-candidatos" id="gradeCandidatos"></div>
+      <div class="acoes-categoria" id="acoesCategoria"></div>
+      <div class="mini-resultado" id="apuracaoParcial"></div>
+    </section>
+
+    <!-- ====== TELA DE RESULTADOS ====== -->
+    <section id="tela-resultados" class="tela">
+      <button class="btn-voltar" id="btnVoltarHome2">← Voltar ao início</button>
+      <div class="cat-cabecalho">
+        <h2>Resultado da votação</h2>
+        <p class="cat-aviso" id="totalGeral"></p>
+      </div>
+      <div class="grade-resultados" id="gradeResultados"></div>
+      <div class="acoes-resultados">
+        <button class="btn btn-borda" id="btnNovoEleitor">👤 Próximo eleitor</button>
+        <button class="btn btn-perigo" id="btnZerar">Zerar votação</button>
+      </div>
+      <p class="nota">“Próximo eleitor” libera uma nova pessoa para votar neste mesmo aparelho, sem apagar os votos já contados.</p>
+    </section>
+
+  </main>
+
+  <footer class="rodape">Cine Awards • Premiação fictícia • Todos os filmes, séries e nomes são inventados</footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
