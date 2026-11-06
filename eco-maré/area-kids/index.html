@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área Kids — Eco Maré</title>
+  <meta name="description" content="Espaço das crianças da Eco Maré: aprenda a cuidar da praia, jogue e faça brinquedos com material reciclável.">
+  <link rel="icon" type="image/png" href="../imagens/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilo-kids.css">
+</head>
+<body>
+
+  <!-- ================= CABEÇALHO ================= -->
+  <header class="cabecalho-kids">
+    <div class="cabecalho-kids-conteudo">
+      <a class="botao-voltar" href="../index.html">← Voltar ao site da Eco Maré</a>
+      <a class="logo-kids" href="../index.html" aria-label="Eco Maré, voltar ao site">
+        <img src="../imagens/logo-fundo-branco.png" alt="Eco Maré">
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= BANNER KIDS ================= -->
+    <section class="banner-kids">
+      <div class="banner-kids-conteudo">
+        <span class="selo">🐢 Área Kids</span>
+        <h1>Vamos cuidar da praia juntos!</h1>
+        <p>
+          Aqui você aprende a curtir a praia sem sujar, joga com a gente e descobre
+          como fazer brinquedos com material reciclável.
+        </p>
+
+        <nav class="atalhos" aria-label="Atalhos da Área Kids">
+          <a href="#cuidar">🏖️ Cuidar da praia</a>
+          <a href="#jogo">🎮 Jogo da lixeira</a>
+          <a href="#brinquedos">🧸 Brinquedos</a>
+          <a href="#curiosidades">💡 Curiosidades</a>
+          <a href="#guardiao">🏅 Guardião da praia</a>
+        </nav>
+      </div>
+    </section>
+
+
+    <!-- ================= COMO CUIDAR DA PRAIA ================= -->
+    <section class="secao-kids" id="cuidar">
+      <div class="caixa">
+        <h2>Como cuidar da praia sem poluir</h2>
+        <p class="subtitulo">Olha só que fácil! Quem cuida da praia protege o mar e os bichinhos.</p>
+
+        <div class="cartoes">
+          <article class="cartao-dica cor-azul">
+            <span class="emoji" aria-hidden="true">🎒</span>
+            <h3>Leve seu lixo embora</h3>
+            <p>Brincou, comeu, lanchou? Guarde o lixinho na mochila e jogue na lixeira quando sair da praia.</p>
+          </article>
+
+          <article class="cartao-dica cor-verde">
+            <span class="emoji" aria-hidden="true">🌱</span>
+            <h3>Não pise nas plantinhas</h3>
+            <p>A vegetação da praia, chamada restinga, segura a areia. Passe só pelos caminhos marcados.</p>
+          </article>
+
+          <article class="cartao-dica cor-amarelo">
+            <span class="emoji" aria-hidden="true">🦀</span>
+            <h3>Respeite os bichinhos</h3>
+            <p>Caranguejos, tartarugas e aves moram ali. Olhe de longe, sem pegar e sem Aperrear.</p>
+          </article>
+
+          <article class="cartao-dica cor-coral">
+            <span class="emoji" aria-hidden="true">🥤</span>
+            <h3>Menos plástico, mais mar</h3>
+            <p>Use garrafinha e sacola que dá pra usar de novo. Canudo e copo descartável vão parar no mar!</p>
+          </article>
+
+          <article class="cartao-dica cor-roxo">
+            <span class="emoji" aria-hidden="true">🧤</span>
+            <h3>Achou lixo? Chame um adulto</h3>
+            <p>Vidro, lata e coisas estranhas podem machucar. Peça ajuda para um adulto recolher.</p>
+          </article>
+
+          <article class="cartao-dica cor-azul">
+            <span class="emoji" aria-hidden="true">📣</span>
+            <h3>Conte para os amigos</h3>
+            <p>Ensine a sua família e seus amigos o que você aprendeu. Todo mundo junto faz a diferença!</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= JOGO ================= -->
+    <section class="secao-kids secao-jogo" id="jogo">
+      <div class="caixa">
+        <h2>Jogo: lixo na lixeira certa</h2>
+        <p class="subtitulo">Cada lixo tem a sua lixeira colorida. Clique na lixeira certa para o item que aparecer!</p>
+
+        <div class="jogo" id="jogo-area">
+
+          <div class="jogo-topo">
+            <span>Rodada <strong id="jogoRodada">1</strong> de <strong id="jogoTotal">10</strong></span>
+            <span>Acertos: <strong id="jogoPontos">0</strong></span>
+          </div>
+
+          <div class="jogo-item" id="jogoItem" aria-live="polite">
+            <span class="jogo-emoji" id="jogoEmoji">🧴</span>
+            <span class="jogo-nome" id="jogoNome">Garrafa PET</span>
+          </div>
+
+          <div class="lixeiras" id="lixeiras">
+            <button class="lixeira lixeira-azul" data-tipo="papel"><span aria-hidden="true">🗑️</span>Papel</button>
+            <button class="lixeira lixeira-vermelha" data-tipo="plastico"><span aria-hidden="true">🗑️</span>Plástico</button>
+            <button class="lixeira lixeira-verde" data-tipo="vidro"><span aria-hidden="true">🗑️</span>Vidro</button>
+            <button class="lixeira lixeira-amarela" data-tipo="metal"><span aria-hidden="true">🗑️</span>Metal</button>
+            <button class="lixeira lixeira-marrom" data-tipo="organico"><span aria-hidden="true">🗑️</span>Orgânico</button>
+          </div>
+
+          <p class="jogo-mensagem" id="jogoMensagem" role="status">Escolha uma lixeira!</p>
+
+          <button class="botao-kids-grande" id="jogoProximo" hidden>Próximo →</button>
+
+          <div class="jogo-final" id="jogoFinal" hidden>
+            <h3 id="jogoFinalTitulo">Fim de jogo!</h3>
+            <p id="jogoFinalTexto"></p>
+            <button class="botao-kids-grande" id="jogoReiniciar">Jogar de novo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= BRINQUEDOS RECICLÁVEIS ================= -->
+    <section class="secao-kids" id="brinquedos">
+      <div class="caixa">
+        <h2>Brinquedos feitos de material reciclável</h2>
+        <p class="subtitulo">
+          Em vez de jogar fora, vamos transformar! Clique no brinquedo para ver o que precisa
+          e o passo a passo. Marque cada passo que você já fez.
+        </p>
+        <p class="aviso-adulto">⚠️ Cortar e furar é sempre com a ajuda de um adulto, combinado?</p>
+
+        <div class="brinquedos">
+
+          <!-- ===== Barquinho ===== -->
+          <article class="brinquedo" data-brinquedo>
+            <!-- COLOQUE A FOTO DO BRINQUEDO PRONTO AQUI (troque a div por <img src="../imagens/barquinho.jpg" alt="...">) -->
+            <div class="espaco-foto" role="img" aria-label="Espaço para foto do barquinho pronto">⛵ Foto do barquinho</div>
+            <h3>Barquinho de garrafa PET</h3>
+            <p class="brinquedo-resumo">Flutua de verdade! Teste na bacia ou no tanque.</p>
+
+            <details>
+              <summary>Ver como fazer</summary>
+              <h4>Você vai precisar de:</h4>
+              <ul class="materiais">
+                <li>1 garrafa PET pequena, lavada e seca</li>
+                <li>1 palito de sorvete</li>
+                <li>1 pedaço de papel colorido</li>
+                <li>Fita adesiva e massinha de modelar</li>
+              </ul>
+              <h4>Passo a passo:</h4>
+              <ol class="passos-kids">
+                <li><label><input type="checkbox"> Um adulto corta a garrafa ao meio, no sentido do comprimento. Ela vira uma canoa!</label></li>
+                <li><label><input type="checkbox"> Cubra as bordas cortadas com fita adesiva para não machucar.</label></li>
+                <li><label><input type="checkbox"> Recorte uma velinha de papel colorido e cole no palito de sorvete.</label></li>
+                <li><label><input type="checkbox"> Prenda o palito no fundo do barquinho com a massinha.</label></li>
+                <li><label><input type="checkbox"> Decore e teste na água!</label></li>
+              </ol>
+              <p class="progresso-passos" aria-live="polite"></p>
+            </details>
+          </article>
+
+          <!-- ===== Boliche ===== -->
+          <article class="brinquedo" data-brinquedo>
+            <div class="espaco-foto" role="img" aria-label="Espaço para foto do boliche pronto">🎳 Foto do boliche</div>
+            <h3>Boliche das garrafinhas</h3>
+            <p class="brinquedo-resumo">Derrube os peixinhos e os caranguejos com a bola de meia.</p>
+
+            <details>
+              <summary>Ver como fazer</summary>
+              <h4>Você vai precisar de:</h4>
+              <ul class="materiais">
+                <li>6 garrafinhas PET pequenas, vazias e com tampa</li>
+                <li>Um pouquinho de areia ou água colorida</li>
+                <li>Meias velhas para a bola</li>
+                <li>Tinta, canetinha ou papel colorido</li>
+              </ul>
+              <h4>Passo a passo:</h4>
+              <ol class="passos-kids">
+                <li><label><input type="checkbox"> Lave e seque bem as garrafinhas.</label></li>
+                <li><label><input type="checkbox"> Coloque um pouquinho de areia ou água em cada uma e feche bem a tampa.</label></li>
+                <li><label><input type="checkbox"> Decore como peixinhos, caranguejos e polvos.</label></li>
+                <li><label><input type="checkbox"> Enrole as meias velhas até formar uma bola.</label></li>
+                <li><label><input type="checkbox"> Arrume as garrafinhas em triângulo e jogue a bola!</label></li>
+              </ol>
+              <p class="progresso-passos" aria-live="polite"></p>
+            </details>
+          </article>
+
+          <!-- ===== Telefone ===== -->
+          <article class="brinquedo" data-brinquedo>
+            <img src="Imagens/Telefone sem fio.jpg" alt="Briquedo Telefone sem fio">
+            <h3>Telefone de copo e barbante</h3>
+            <p class="brinquedo-resumo">Fale baixinho num copo e seu amigo escuta no outro.</p>
+
+            <details>
+              <summary>Ver como fazer</summary>
+              <h4>Você vai precisar de:</h4>
+              <ul class="materiais">
+                <li>2 copos de plástico descartáveis (ou potinhos de iogurte limpos)</li>
+                <li>Uns 3 metros de barbante ou fio de lã</li>
+                <li>2 botões grandes ou tampinhas</li>
+              </ul>
+              <h4>Passo a passo:</h4>
+              <ol class="passos-kids">
+                <li><label><input type="checkbox"> Um adulto faz um furinho no fundo de cada copo.</label></li>
+                <li><label><input type="checkbox"> Passe uma ponta do barbante por dentro de cada copo.</label></li>
+                <li><label><input type="checkbox"> Amarre cada ponta num botão ou tampinha, por dentro do copo, pra não escapar.</label></li>
+                <li><label><input type="checkbox"> Afastem-se até o barbante ficar bem esticado.</label></li>
+                <li><label><input type="checkbox"> Um fala no copo e o outro escuta no seu. Alô?</label></li>
+              </ol>
+              <p class="progresso-passos" aria-live="polite"></p>
+            </details>
+          </article>
+
+          <!-- ===== Maracá ===== -->
+          <article class="brinquedo" data-brinquedo>
+            <div class="espaco-foto" role="img" aria-label="Espaço para foto do maracá pronto">🎶 Foto do maracá</div>
+            <h3>Maracá de tampinhas</h3>
+            <p class="brinquedo-resumo">Um chocalho para fazer a festa e tocar no ritmo do mar.</p>
+
+            <details>
+              <summary>Ver como fazer</summary>
+              <h4>Você vai precisar de:</h4>
+              <ul class="materiais">
+                <li>1 garrafinha PET pequena, lavada e seca</li>
+                <li>Um punhado de arroz, feijão ou sementes</li>
+                <li>Tampinhas coloridas</li>
+                <li>Fita adesiva, cola e papel colorido</li>
+              </ul>
+              <h4>Passo a passo:</h4>
+              <ol class="passos-kids">
+                <li><label><input type="checkbox"> Lave e seque bem a garrafinha por dentro.</label></li>
+                <li><label><input type="checkbox"> Coloque o punhado de arroz, feijão ou sementes lá dentro.</label></li>
+                <li><label><input type="checkbox"> Feche bem a tampa e passe fita adesiva em volta dela.</label></li>
+                <li><label><input type="checkbox"> Decore com papel colorido e cole as tampinhas.</label></li>
+                <li><label><input type="checkbox"> Balance no ritmo da música!</label></li>
+              </ol>
+              <p class="progresso-passos" aria-live="polite"></p>
+            </details>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= CURIOSIDADES ================= -->
+    <section class="secao-kids secao-curiosidade" id="curiosidades">
+      <div class="caixa">
+        <h2>Você sabia?</h2>
+        <div class="balao">
+          <span class="balao-emoji" aria-hidden="true">🐢</span>
+          <p id="curiosidadeTexto">Clique no botão para descobrir uma curiosidade sobre o mar!</p>
+        </div>
+        <button class="botao-kids-grande" id="botaoCuriosidade">Quero saber mais!</button>
+      </div>
+    </section>
+
+
+    <!-- ================= CERTIFICADO ================= -->
+    <section class="secao-kids" id="guardiao">
+      <div class="caixa">
+        <h2>Seja um Guardião da Praia</h2>
+        <p class="subtitulo">Escreva o seu nome e receba o certificado de quem promete cuidar do mar.</p>
+
+        <form class="form-guardiao" id="formGuardiao">
+          <label for="nomeGuardiao">Seu nome</label>
+          <input type="text" id="nomeGuardiao" maxlength="40" placeholder="Como você se chama?" required>
+          <button type="submit" class="botao-kids-grande">Gerar meu certificado</button>
+        </form>
+
+        <div class="certificado" id="certificado" hidden>
+          <img src="../imagens/logo.png" alt="Logo da Eco Maré" class="certificado-logo">
+          <p class="certificado-topo">Certificado de Guardião da Praia</p>
+          <h3 id="certificadoNome">Nome</h3>
+          <p>
+            prometeu levar o lixo embora, não pisar nas plantinhas da restinga,
+            respeitar os bichinhos e ensinar os amigos a cuidar da praia.
+          </p>
+          <p class="certificado-data" id="certificadoData"></p>
+          <p class="certificado-rodape">Eco Maré — O futuro dos oceanos começa na praia.</p>
+        </div>
+
+        <button class="botao-kids-grande botao-imprimir" id="botaoImprimir" hidden>🖨️ Imprimir certificado</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape-kids">
+    <p><strong>ECO MARÉ</strong> — O futuro dos oceanos começa na praia.</p>
+    <p><a href="../index.html">← Voltar ao site da Eco Maré</a></p>
+  </footer>
+
+  <script src="script-kids.js"></script>
+</body>
+</html>
