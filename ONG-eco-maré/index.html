@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco Maré — ONG de preservação das praias do RN</title>
+  <meta name="description" content="A Eco Maré é uma ONG que limpa, preserva e recupera praias e ecossistemas costeiros, começando pelo Rio Grande do Norte.">
+  <link rel="icon" type="image/png" href="imagens/logo.png">
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <!-- ============== CABEÇALHO ============= -->
+  <header class="cabecalho" id="cabecalho">
+    <div class="cabecalho-conteudo">
+
+      <!-- Botão da Área Kids-->
+      <a class="botao-kids" href="area-kids/index.html">
+        <span aria-hidden="true">🐢</span> Área Kids
+      </a>
+
+      <a class="logo-cabecalho" href="#inicio" aria-label="Eco Maré, voltar ao início">
+        <img src="imagens/logo-fundo-branco.png" alt="Eco Maré">
+      </a>
+
+      <button class="botao-menu" id="botaoMenu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Menu principal">
+        <a href="#inicio">Início</a>
+        <a href="#arrecadacao">Arrecadação</a>
+        <a href="#sobre-nos">Sobre nós</a>
+        <a href="#como-ajudar" data-abrir-ajuda>Como ajudar</a>
+        <a href="#reciclagem">Reciclagem</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ========= BANNER ========== -->
+    <section class="banner" id="inicio">
+      <div class="banner-conteudo">
+        <div class="cartao-logo">
+          <img src="imagens/logo.png" alt="Logo da ONG Eco Maré">
+        </div>
+
+        <span class="etiqueta etiqueta-clara">ONG · Rio Grande do Norte</span>
+        <h1>Cuidar da praia é cuidar do mar</h1>
+        <p>
+          A Eco Maré faz mutirões de limpeza, protege a vegetação de restinga e leva
+          educação ambiental para o litoral potiguar. Vem fazer parte!
+        </p>
+
+        <div class="banner-botoes">
+          <a class="botao botao-cheio" href="#como-ajudar" data-abrir-ajuda>Como ajudar</a>
+          <a class="botao botao-contorno" href="#arrecadacao">Ver arrecadação</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========== ARRECADAÇÃO ========== -->
+    <section class="secao" id="arrecadacao">
+      <div class="container">
+        <span class="etiqueta">Arrecadação</span>
+        <h2 class="titulo-secao">Nossa primeira limpeza já está a caminho</h2>
+        <p class="texto-secao">
+          A primeira grande limpeza da Eco Maré vai acontecer na <strong>Praia do Forte, em Natal</strong>.
+          Já juntamos uma boa parte do dinheiro e dos voluntários, mas ainda falta bastante.
+          Acompanhe aqui como estamos!
+        </p>
+
+        <!--
+          Para mudar os números é só mexer nos data-atual e data-meta abaixo.
+          O JavaScript calcula a barra e o "faltam" sozinho.
+        -->
+        <div class="painel-metas">
+
+          <article class="cartao-meta" data-atual="5130" data-meta="12000" data-tipo="dinheiro">
+            <h3>Dinheiro arrecadado</h3>
+            <p class="meta-numero">R$ <span class="numero-atual">5.130</span></p>
+            <p class="meta-total">de <strong>R$ 12.000</strong> que precisamos</p>
+            <div class="barra" role="progressbar" aria-label="Progresso da arrecadação" aria-valuemin="0" aria-valuemax="100" aria-valuenow="43">
+              <div class="barra-preenchida" style="--largura: 43%"></div>
+            </div>
+            <p class="meta-faltam">Faltam <strong class="numero-faltam">R$ 6.870</strong></p>
+          </article>
+
+          <article class="cartao-meta" data-atual="18" data-meta="60" data-tipo="pessoas">
+            <h3>Voluntários inscritos</h3>
+            <p class="meta-numero"><span class="numero-atual">18</span> pessoas</p>
+            <p class="meta-total">de <strong>60 voluntários</strong> que precisamos</p>
+            <div class="barra" role="progressbar" aria-label="Progresso dos voluntários" aria-valuemin="0" aria-valuemax="100" aria-valuenow="30">
+              <div class="barra-preenchida barra-verde" style="--largura: 30%"></div>
+            </div>
+            <p class="meta-faltam">Faltam <strong class="numero-faltam">42 pessoas</strong></p>
+          </article>
+
+          <article class="cartao-meta cartao-destaque">
+            <h3>E o que vamos fazer?</h3>
+            <p>
+              Com a meta batida, compramos o kit completo para os 60 voluntários e organizamos
+              o mutirão: luvas, sacos de coleta, ecopeneiras, ferramentas, proteção, água e
+              transporte do lixo até o destino certo.
+            </p>
+            <a class="botao botao-cheio botao-pequeno" href="#como-ajudar" data-abrir-ajuda>Quero ajudar</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ SOBRE NÓS ============ -->
+    <section class="secao secao-clara" id="sobre-nos">
+      <div class="container">
+        <span class="etiqueta">Sobre nós</span>
+        <h2 class="titulo-secao">Quem é a Eco Maré?</h2>
+
+        <div class="sobre-texto">
+          <p>
+            A <strong>Eco Maré</strong> é uma Organização Não Governamental (ONG) dedicada à limpeza,
+            preservação e recuperação de praias e ecossistemas costeiros. Nosso principal objetivo é
+            contribuir para a conservação do litoral, promovendo ações que ajudem a fauna e a flora
+            nativas, principalmente as espécies ameaçadas ou em situação de vulnerabilidade.
+          </p>
+          <p>
+            Nosso projeto começa no <strong>Rio Grande do Norte</strong>, com foco na Praia do Forte (Natal),
+            na Praia de Santa Rita (Extremoz) e na Praia do Pontal (Baía Formosa). Nossa principal referência
+            é o <strong>Objetivo de Desenvolvimento Sustentável 14 (ODS 14) — Vida na Água</strong>, da ONU,
+            que busca conservar e usar de forma sustentável os oceanos, mares e recursos marinhos.
+          </p>
+        </div>
+
+        <div class="sobre-grade">
+
+            <img class="foto-alta" src="imagens/mutirão de limpeza praia.jpg" alt="Mutirão de limpeza">
+
+          <div class="sobre-direita">
+            <div class="numeros">
+              <div class="numero-item">
+                <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6 7-11a7 7 0 10-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                <div><strong>3</strong><span>Praias de foco</span></div>
+              </div>
+              <div class="numero-item">
+                <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
+                <div><strong>ODS 14</strong><span>Vida na Água</span></div>
+              </div>
+              <div class="numero-item">
+                <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-8-5-8-11a4.5 4.5 0 018-2.5A4.5 4.5 0 0120 9c0 6-8 11-8 11z"/></svg>
+                <div><strong>0%</strong><span>De lucro</span></div>
+              </div>
+            </div>
+
+              <img class="foto-larga" src="imagens/Praia RN.jpg" alt="foto de uma praia do RN">
+              
+          </div>
+        </div>
+
+        <div class="sobre-texto sobre-texto-baixo">
+          <p>
+            Nossa missão é tornar as praias ambientes mais limpos, seguros e saudáveis, tanto para quem
+            toma banho de mar quanto para a vida marinha e vegetal. Também queremos fazer campanhas de
+            educação ambiental para moradores, turistas e comerciantes, falando sobre o descarte correto
+            do lixo e a proteção dos ecossistemas costeiros.
+          </p>
+          <p>
+            O dinheiro arrecadado vai principalmente para manter e desenvolver as atividades da ONG, com
+            prioridade para os equipamentos dos voluntários. Nosso compromisso é usar tudo de forma
+            responsável e transparente, sem visar ao lucro.
+          </p>
+        </div>
+
+        <!-- As três praias -->
+        <div class="praias">
+          <article class="praia">
+            <h3>Praia do Forte</h3>
+            <p>Natal · onde vai acontecer a nossa primeira limpeza. caso alcançarmos nossos objetivos o mutirão acontecera: 21/02/2027 - Domingo.</p>
+          </article>
+          <article class="praia">
+            <h3>Praia de Santa Rita</h3>
+            <p>Extremoz · uma das praias de foco do projeto. Data: indefinida</p>
+          </article>
+          <article class="praia">
+            <h3>Praia do Pontal</h3>
+            <p>Baía Formosa · outra praia que queremos cuidar de perto. Data: indefinida</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= O QUE FAZEMOS (faixa azul escura) ================= -->
+    <section class="faixa-azul" id="o-que-fazemos">
+      <div class="container">
+        <div class="faixa-colunas">
+
+          <article class="faixa-item">
+            <svg class="icone icone-dourado" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v6M14 11v6"/></svg>
+            <h3>Mutirões de limpeza</h3>
+            <p>Retiramos plásticos, garrafas, latas e outros resíduos que fazem mal ao mar e aos bichos.</p>
+          </article>
+
+          <article class="faixa-item">
+            <svg class="icone icone-dourado" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12c3-5 9-6 13-2l5-3v10l-5-3c-4 4-10 3-13-2z"/><circle cx="8" cy="11" r=".8"/></svg>
+            <h3>Fauna e flora nativas</h3>
+            <p>Apoiamos a conservação de espécies ameaçadas e a recuperação dos habitats naturais.</p>
+          </article>
+
+          <article class="faixa-item">
+            <svg class="icone icone-dourado" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V10M12 14c-4 0-6-3-6-7 4 0 6 3 6 7zM12 12c0-3 2-6 6-6 0 4-2 6-6 6z"/></svg>
+            <h3>Proteção da restinga</h3>
+            <p>Cuidamos da vegetação costeira que segura a areia e protege a nossa praia.</p>
+          </article>
+
+          <article class="faixa-item">
+            <svg class="icone icone-dourado" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h6a3 3 0 013 3v11a2 2 0 00-2-2H3zM21 5h-6a3 3 0 00-3 3v11a2 2 0 012-2h7z"/></svg>
+            <h3>Educação ambiental</h3>
+            <p>Campanhas para moradores, turistas e comerciantes sobre o descarte correto do lixo.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= NOSSO FUTURO ================= -->
+    <section class="secao secao-azulclaro" id="nosso-futuro">
+      <div class="container">
+        <span class="etiqueta">Nosso futuro</span>
+        <h2 class="titulo-secao">Onde queremos chegar</h2>
+        <p class="texto-secao">
+          A longo prazo, queremos levar a Eco Maré para outras regiões do litoral brasileiro e
+          construir estruturas que ajudem o oceano de verdade.
+        </p>
+
+        <ul class="lista-futuro">
+          <li>Expandir as ações para outras regiões do litoral de todo o Brasil</li>
+          <li>Construir centros de pesquisa marinha e de reabilitação de animais marinhos</li>
+          <li>Apoiar a pesca responsável</li>
+          <li>Trabalhar pela criação de novas áreas de preservação ambiental</li>
+          <li>Quando for necessário e legalmente possível, comprar terrenos para proteger ecossistemas e habitats</li>
+        </ul>
+
+        <p class="frase-final">
+          Acreditamos que a preservação dos oceanos começa também nas praias. Com união,
+          consciência e ações de verdade, a gente chega lá.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ================= COMO AJUDAR ================= -->
+    <section class="secao" id="como-ajudar">
+      <div class="container texto-centro">
+        <span class="etiqueta">Participe</span>
+        <h2 class="titulo-secao">Tem lugar pra você na Eco Maré</h2>
+        <p class="texto-secao texto-secao-centro">
+          Dá pra ajudar com dinheiro, com o seu tempo ou chamando a gente no WhatsApp.
+          Clique no botão e veja tudo em detalhes.
+        </p>
+
+        <button class="botao botao-cheio botao-grande" id="botaoAjuda" aria-expanded="false" aria-controls="ajudaDetalhes">
+          Como ajudar
+        </button>
+      </div>
+
+      <!-- Este bloco fica escondido até clicar no botão (quem controla é o script.js) -->
+      <div class="ajuda-detalhes" id="ajudaDetalhes" hidden>
+        <div class="container">
+
+          <div class="ajuda-grade">
+
+            <!-- Lado do dinheiro -->
+            <article class="ajuda-cartao">
+              <h3>1. Ajude com dinheiro</h3>
+              <p>
+                Tudo o que for arrecadado vai para a manutenção da ONG e, principalmente, para os
+                equipamentos dos voluntários. Para a primeira limpeza estimamos
+                <strong>R$ 12.000</strong>. Veja onde cada parte do dinheiro entra:
+              </p>
+
+              <ul class="lista-gastos">
+                <li style="--parte: 8%"><span>Luvas de proteção (cerca de 80 pares)</span><strong>R$ 960</strong></li>
+                <li style="--parte: 5.3%"><span>Sacos de coleta reforçados</span><strong>R$ 640</strong></li>
+                <li style="--parte: 20%"><span>Ecopeneiras e ferramentas</span><strong>R$ 2.400</strong></li>
+                <li style="--parte: 18.3%"><span>Materiais de proteção (botas, máscaras, protetor solar, primeiros socorros)</span><strong>R$ 2.200</strong></li>
+                <li style="--parte: 15%"><span>Camisetas de identificação dos voluntários</span><strong>R$ 1.800</strong></li>
+                <li style="--parte: 23.3%"><span>Água, lanche e transporte dos voluntários</span><strong>R$ 2.800</strong></li>
+                <li style="--parte: 10%"><span>Coleta e destino correto do lixo</span><strong>R$ 1.200</strong></li>
+              </ul>
+
+              <!-- chave Pix -->
+              <div class="caixa-pix">
+                <span>Chave Pix da Eco Maré</span>
+                <code id="chavePix">não temos uma chave pix ainda</code>
+                <button type="button" class="botao botao-contorno-escuro botao-pequeno" id="botaoCopiarPix">Copiar chave</button>
+              </div>
+            </article>
+
+            <!-- Lado do voluntariado -->
+            <article class="ajuda-cartao">
+              <h3>2. Seja voluntário(a)</h3>
+              <p>Não precisa de experiência, só de vontade. É assim que funciona:</p>
+
+              <ol class="passos">
+                <li>Preencha o cadastro rápido logo abaixo.</li>
+                <li>Cole a mensagem no nosso grupo do WhatsApp (a gente copia pra você).</li>
+                <li>Receba a data, o horário e o ponto de encontro do mutirão.</li>
+                <li>No dia, venha de roupa leve, com chapéu, protetor solar e garrafinha de água. As luvas e os sacos são por nossa conta!</li>
+              </ol>
+
+              <form class="formulario" id="formularioVoluntario">
+                <label for="campoNome">Seu nome</label>
+                <input type="text" id="campoNome" name="nome" placeholder="Como você se chama?" required>
+
+                <label for="campoPraia">Praia que você prefere</label>
+                <select id="campoPraia" name="praia">
+                  <option>Praia do Forte (Natal)</option>
+                  <option>Praia de Santa Rita (Extremoz)</option>
+                  <option>Praia do Pontal (Baía Formosa)</option>
+                  <option>Qualquer uma</option>
+                </select>
+
+                <label for="campoDisponibilidade">Quando você pode?</label>
+                <select id="campoDisponibilidade" name="disponibilidade">
+                  <option>Fins de semana</option>
+                  <option>Durante a semana</option>
+                  <option>Qualquer dia</option>
+                </select>
+
+                <button type="submit" class="botao botao-cheio">Quero ser voluntário(a)</button>
+                <p class="formulario-aviso" id="avisoFormulario" role="status"></p>
+              </form>
+            </article>
+
+          </div>
+
+          <!-- Faixa do WhatsApp -->
+          <div class="faixa-whatsapp">
+            <div>
+              <h3>Prefere conversar? Entre em contato via WhatsApp</h3>
+              <p>Tire dúvidas, saiba das próximas ações e entre no grupo dos voluntários.</p>
+            </div>
+            <a class="botao botao-whatsapp" href="https://chat.whatsapp.com/LoqWzeSZCIiE8vIzfg6jlP" target="_blank" rel="noopener">
+              Entrar no grupo do WhatsApp
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= RECICLAGEM (verde) ================= -->
+    <section class="secao-verde" id="reciclagem">
+      <div class="container">
+        <span class="etiqueta etiqueta-clara">Reciclagem</span>
+        <h2 class="titulo-secao titulo-claro">Em vez de jogar na rua, dê outro destino</h2>
+        <p class="texto-secao texto-claro">
+          Tudo o que cai na rua ou na areia pode ir parar no mar. Separar o lixo em casa já ajuda muito:
+        </p>
+
+        <div class="reciclagem-grade">
+          <article class="reciclagem-item">
+            <span aria-hidden="true">🧴</span>
+            <h3>Plástico</h3>
+            <p>Garrafas e tampinhas limpas podem virar brinquedos e vasos. Tem ideias na Área Kids!</p>
+          </article>
+          <article class="reciclagem-item">
+            <span aria-hidden="true">🍾</span>
+            <h3>Vidro</h3>
+            <p>Lave e entregue em pontos de coleta. Cuidado com os cacos!</p>
+          </article>
+          <article class="reciclagem-item">
+            <span aria-hidden="true">🥫</span>
+            <h3>Latas e metal</h3>
+            <p>Amasse, separe e leve pra reciclagem. Metal pode ser reaproveitado muitas vezes.</p>
+          </article>
+          <article class="reciclagem-item">
+            <span aria-hidden="true">📦</span>
+            <h3>Papel e papelão</h3>
+            <p>Mantenha seco e limpo, longe de gordura, e separe do resto do lixo.</p>
+          </article>
+        </div>
+
+        <!-- TROQUE o href pelo link do site parceiro -->
+        <a class="botao botao-branco" href="#" id="linkParceiro" target="_blank" rel="noopener">
+          Entre no site parceiro
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grade">
+
+        <div class="rodape-marca">
+          <img src="imagens/logo-fundo-branco.png" alt="Logo da Eco Maré">
+          <p>ONG de limpeza, preservação e recuperação de praias e ecossistemas costeiros.</p>
+        </div>
+
+        <div>
+          <h4>Navegue</h4>
+          <ul>
+            <li><a href="#arrecadacao">Arrecadação</a></li>
+            <li><a href="#sobre-nos">Sobre nós</a></li>
+            <li><a href="#como-ajudar" data-abrir-ajuda>Como ajudar</a></li>
+            <li><a href="#reciclagem">Reciclagem</a></li>
+            <li><a href="area-kids/index.html">Área Kids</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Onde atuamos</h4>
+          <ul>
+            <li>Praia do Forte — Natal</li>
+            <li>Praia de Santa Rita — Extremoz</li>
+            <li>Praia do Pontal — Baía Formosa</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contato</h4>
+          <p>Fale com a gente pelo WhatsApp:</p>
+          <a class="botao botao-whatsapp botao-pequeno" href="https://chat.whatsapp.com/LoqWzeSZCIiE8vIzfg6jlP" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+
+      </div>
+
+      <div class="rodape-final">
+        <p class="slogan"><strong>ECO MARÉ</strong> — O futuro dos oceanos começa na praia.</p>
+        <p class="direitos">© 2026 Eco Maré · Organização sem fins lucrativos · Inspirados pelo ODS 14 da ONU</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
